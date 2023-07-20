@@ -9,7 +9,7 @@
  - Amazon RDS (MySQL)
 
 # Quick start
-
+http://18.198.197.168/
 ### Start from docker-compose
 
 Build application from docker-compose.yml file
@@ -55,13 +55,16 @@ Enter venv
 ```
 Install libs
 ```bash
-pip install =r requirements.txt
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+If you receive error with installing mysqlclient
+```bash
+sudo apt-get install pkg-config
 ```
 Run celery worker and django application
 ```bash
-celery -A comment_service  worker -l info -P gevent
+celery -A comment_service  worker -P gevent
 python manage.py runserver
 ```
 And now you`r project successfully started
-
-# 
