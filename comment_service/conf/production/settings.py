@@ -74,7 +74,7 @@ DATABASES = {
         'NAME': 'database_1',
         'USER': 'admin',
         'PASSWORD': 'Thunderstruck',
-        'HOST': 'database-1.cdihzrrehcc0.eu-central-1.rds.amazonaws.com',
+        'HOST': 'your-host-here',
         'PORT': '3306',
     }
 }
